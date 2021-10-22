@@ -5,14 +5,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect, useState } from 'react';
 import StepsCounterInput from './componentas/StepsCounter';
 import logo from './media/alien-dance.gif';
-import Downloader from './componentas/DownloadButton';
 
 function App() {
 
-  const [cabecera, setCabecera] = useState('');
   const [outputs, setOutputs] = useState('output shows here');
   const [inputs, setInputs] = useState('input shows here');
-  const [inputTitle, setInputTitle] = useState('');
+  const [translationPathString, setTranslationPathString] = useState('');
 
   var fileName;
   var fileContent;
@@ -36,6 +34,10 @@ useEffect(()=>{
   console.log(outputs);
 }, [outputs])
 
+useEffect(()=>{
+  console.log(translationPathString);
+}, [translationPathString])
+
 function getTranslationPath(){
   let pathArray = [];
   let offsetPathArray = [];
@@ -49,8 +51,12 @@ function getTranslationPath(){
   pathArray.push('es');
   translationPath = pathArray;
   offsetTranslationPath = offsetPathArray;
-  console.log(translationPath);
-  console.log(offsetTranslationPath);
+  let tempPathString = 'translation path: '
+  for(let i = 0 ; i<translationPath.length-1 ; i++){
+    tempPathString = tempPathString + codesKeys[translationPath[i]] + " → ";
+  }
+  tempPathString = tempPathString + "español";
+  setTranslationPathString(tempPathString);
 }
 
 const handleInputs = (inputText) =>{
@@ -69,6 +75,28 @@ const codesArray = [
   {3 : ['ar', 'zh-Hans', 'zh-Hant', 'ja', 'ko', 'yua', 'tlh-Latn', 'tlh-Piqd']}
 ];
 
+const codesKeys = {
+  'da' : 'danés', 'nl' : 'holandés',
+  'fr' : 'francés', 'it' : 'italiano', 'nb' : 'noruego',
+  'pt' : 'portugues', 'ro' : 'rumano',
+  'es' : 'español', 'sv' : 'sueco',
+  'de' : 'alemán', 'ht' : 'creole haitiano',
+  'id' : 'indonesio', 'ms' : 'malayo',
+  'sw' : 'swahili', 'sq' : 'albania',
+  'am' : 'amárico', 'hy' : 'armenio',
+  'az' : 'azerbaiyán', 'bg' : 'búlgaro',
+  'cs' : 'checo', 'prs': 'persa, dari',
+  'et' : 'estonia', 'fi' : 'finlandés',
+  'ka' : 'georgiano', 'hi' : 'hindi',
+  'hu' : 'húngaro', 'kk' : 'kazajstán',
+  'km' : 'khmer', 'lo' : 'lao',
+  'sl' : 'esloveno', 'te' : 'telgu',
+  'ar' : 'árabe', 'zh-Hans' : 'chino simplificado',
+  'zh-Hant' : 'chino tradicional', 'ja' : 'japonés',
+  'ko' : 'koreano', 'yua' : 'maya yucateco',
+  'tlh-Latn' : 'klingon', 'tlh-Piqd' : 'klingon (plqaD)'
+}
+
 const handleFileChange = e => {
   const file = e.target.files[0];
   const reader = new FileReader();
@@ -80,7 +108,6 @@ const handleFileChange = e => {
     console.log(fileName, fileContent+" /// ");
     console.log(typeof fileContent);
     detextoTranslation(steps, fileContent, foobar);
-    setInputTitle(fileName);
     setInputs(fileContent);
   }
   reader.onabort = () =>{
@@ -121,7 +148,6 @@ const detextoTranslation = async (steps, texto, foo) => {
       texto = foo;
   })
 }
-  console.log(translationPath);
 }
 
 const TriggerTranslation = (texto, foo) =>{
@@ -192,12 +218,18 @@ const TriggerTranslation = (texto, foo) =>{
               {outputs}
             </p>
           </div>
+          
         </div>
         <br/>
-        {/*<Downloader filename={inputTitle} text={inputs}></Downloader>*/}
+        <div className="div-chiquito-xd">
+          <p>
+           {translationPathString}
+         </p>
+        </div>
+        <br/>
         </header>
         <div>
-        
+         
         </div>
       </div>
     </div>

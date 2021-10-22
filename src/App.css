@@ -15,6 +15,12 @@ input[type="number"] {
   width: 2.5em;
 }
 
+.div-chiquito-xd{
+  width: 40%;
+  color: lightslategray;
+  font-size: 18px;
+}
+
 .Outputs {
   background-color: aliceblue;
   color:black;
