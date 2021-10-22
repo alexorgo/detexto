@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/detexto/static/css/main.8947c151.chunk.css",
-    "main.js": "/detexto/static/js/main.d6eeeada.chunk.js",
-    "main.js.map": "/detexto/static/js/main.d6eeeada.chunk.js.map",
+    "main.css": "/detexto/static/css/main.84e8cea1.chunk.css",
+    "main.js": "/detexto/static/js/main.1e8c9726.chunk.js",
+    "main.js.map": "/detexto/static/js/main.1e8c9726.chunk.js.map",
     "runtime-main.js": "/detexto/static/js/runtime-main.40581edd.js",
     "runtime-main.js.map": "/detexto/static/js/runtime-main.40581edd.js.map",
     "static/css/2.0f1110e3.chunk.css": "/detexto/static/css/2.0f1110e3.chunk.css",
@@ -12,14 +12,15 @@
     "static/js/3.5a598c92.chunk.js.map": "/detexto/static/js/3.5a598c92.chunk.js.map",
     "index.html": "/detexto/index.html",
     "static/css/2.0f1110e3.chunk.css.map": "/detexto/static/css/2.0f1110e3.chunk.css.map",
-    "static/css/main.8947c151.chunk.css.map": "/detexto/static/css/main.8947c151.chunk.css.map",
-    "static/js/2.43fcb7c2.chunk.js.LICENSE.txt": "/detexto/static/js/2.43fcb7c2.chunk.js.LICENSE.txt"
+    "static/css/main.84e8cea1.chunk.css.map": "/detexto/static/css/main.84e8cea1.chunk.css.map",
+    "static/js/2.43fcb7c2.chunk.js.LICENSE.txt": "/detexto/static/js/2.43fcb7c2.chunk.js.LICENSE.txt",
+    "static/media/alien-dance.6057b0da.gif": "/detexto/static/media/alien-dance.6057b0da.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.40581edd.js",
     "static/css/2.0f1110e3.chunk.css",
     "static/js/2.43fcb7c2.chunk.js",
-    "static/css/main.8947c151.chunk.css",
-    "static/js/main.d6eeeada.chunk.js"
+    "static/css/main.84e8cea1.chunk.css",
+    "static/js/main.1e8c9726.chunk.js"
   ]
 }
