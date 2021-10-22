@@ -11,16 +11,16 @@ function App() {
   const [outputs, setOutputs] = useState('output shows here');
   const [inputs, setInputs] = useState('input shows here');
   const [translationPathString, setTranslationPathString] = useState('');
+  const [steps, setSteps] = useState(5);
 
   var fileName;
   var fileContent;
 
-  var steps = 5;
   var translationPath = [];
   var offsetTranslationPath = [];
 
   const handleSteps = (noSteps) => {
-    steps = noSteps;
+    setSteps(noSteps);
   }
 
 const axios = require('axios').default;
