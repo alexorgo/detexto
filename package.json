@@ -2,7 +2,7 @@
   "name": "detexto",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://alexorgo.github.io/detexto",
+  "homepage": "http://alexorgo.github.io/detexto",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -19,7 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy" : "gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

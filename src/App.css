@@ -7,6 +7,14 @@
   pointer-events: none;
 }
 
+.ayuda-no-se{
+  margin: 5px;
+}
+
+input[type="number"] {
+  width: 2.5em;
+}
+
 .Outputs {
   background-color: aliceblue;
   color:black;

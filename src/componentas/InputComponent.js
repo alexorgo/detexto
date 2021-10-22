@@ -9,12 +9,14 @@ const InputBlock = (props) => {
     return (
         <div>
         <input
+        className="ayuda-no-se"
           type="text"
           ref={textInput} 
           placeholder="sobres date ogt"/>
         <input
+        className="ayuda-no-se"
           type="button"
-          value="Dijo que te des ogt"
+          value="sobress"
           onClick={handleClick}
         />
       </div>

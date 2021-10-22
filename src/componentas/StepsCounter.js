@@ -10,7 +10,7 @@ const StepsCounterInput = (props) => {
     return(
         <label>
             Numero de saltos:
-            <input type="number" onInput={handleSteps} ref={numberInput} placeholder='5'></input>
+            <input className="ayuda-no-se" type="number" onInput={handleSteps} ref={numberInput} placeholder='5'></input>
         </label>
     )
 }

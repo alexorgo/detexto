@@ -4,12 +4,13 @@ import InputBlock from './componentas/InputComponent';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import { useEffect, useState } from 'react';
 import StepsCounterInput from './componentas/StepsCounter';
+import logo from './media/alien-dance.gif';
 import Downloader from './componentas/DownloadButton';
 
 function App() {
 
   const [cabecera, setCabecera] = useState('');
-  const [outputs, setOutputs] = useState('output shows hered');
+  const [outputs, setOutputs] = useState('output shows here');
   const [inputs, setInputs] = useState('input shows here');
   const [inputTitle, setInputTitle] = useState('');
 
@@ -162,12 +163,21 @@ const TriggerTranslation = (texto, foo) =>{
     <div className="App">
       <div className="col">
         <header className="App-header">
-          <h1>
-            {cabecera}
+          <div className="row">
+          <div className="col">
+            <h1>
+            hola mensas
           </h1>
-        <InputBlock handle={handleInputs}/>
+          </div>
+          <div className="col">
+          <img src={logo} />
+          </div>
+          </div>
+
+          <br/>
+          <input type="file" onChange={handleFileChange}></input>
         <br/>
-        <input type="file" onChange={handleFileChange}></input>
+        <InputBlock handle={handleInputs}/>
         <br/>
         <StepsCounterInput handle={handleSteps}/>
         <br/>
