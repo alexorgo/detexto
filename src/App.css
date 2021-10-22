@@ -7,6 +7,23 @@
   pointer-events: none;
 }
 
+.Outputs {
+  background-color: aliceblue;
+  color:black;
+  white-space:pre-wrap;
+  margin: 5px;
+}
+
+.row-outputs{
+  background-color: #282c34 !important;
+  color:black !important;
+}
+
+.Reng{
+  background-color: #282c34;
+  display: inline;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
