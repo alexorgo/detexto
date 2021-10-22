@@ -60,11 +60,15 @@ function getTranslationPath(){
 }
 
 const handleInputs = (inputText) =>{
-  setInputs(inputText);
+  if(inputText == '') {
+    console.log('big cacas es _');
+  }
+  else
+    {setInputs(inputText);}
   console.log("le vengo manejando "+inputText);
   getTranslationPath();
   //TriggerTranslation(inputText, foobar);
-  detextoTranslation(steps, inputText, foobar);
+  detextoTranslation(steps, inputs, foobar);
 }
 
 const codesArray = [
