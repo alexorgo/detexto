@@ -12,7 +12,9 @@ const InputBlock = (props) => {
         className="ayuda-no-se"
           type="text"
           ref={textInput} 
-          placeholder="sobres date ogt"/>
+          placeholder="sobres date ogt"
+          onChange={(e) => props.setter(textInput.current.value)}/>
+
         <input
         className="ayuda-no-se"
           type="button"
