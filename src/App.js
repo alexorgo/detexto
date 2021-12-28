@@ -169,7 +169,6 @@ const brokenTranslation = async (steps, texto) =>{
           </div>
 
           <br/>
-          <input type="file" onChange={handleFileChange}></input>
         <br/>
         <InputBlock setter={setInputs} handle={handleInputs}/>
         <br/>
